@@ -1,2 +1,2 @@
 # Learning Web Development through The Odin Project
-Hello! My name is Daniel Popovici. This repository contains all the work I've done while completing The Odin Project. Feel Free to view my work and how I've progressed from beginning to end.
+Hello! My name is Daniel Popovici. This repository contains all the topics I've learned while completing The Odin Project. Be sure to check out my other repos for projects I've completed!
