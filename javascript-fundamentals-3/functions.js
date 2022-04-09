@@ -50,7 +50,7 @@ const madeAnotherString = myArray.join();
 console.log(madeAnotherString);
 
 
-// the join() function creates and returns a new string by concatenating all of the elements in an array. By default, each element is seperated by a comma unless you enter a specified seperator string (like a space). This function in particular has an optional parameter so it isn't required to invoke.
+    // the join() function creates and returns a new string by concatenating all of the elements in an array. By default, each element is seperated by a comma unless you enter a specified seperator string (like a space). This function in particular has an optional parameter so it isn't required to invoke.
 
 function hello(name='Daniel'){
     console.log(`Hello ${name}!`);
@@ -59,4 +59,28 @@ function hello(name='Daniel'){
 hello('Steve');
 hello();
 
-// If you are creating your own function you can specify your own default value by adding = after the name of the parameter.
+    // If you are creating your own function you can specify your own default value by adding = after the name of the parameter.
+
+/*function() {
+    console.log('Anonymous function')
+}
+*/
+
+    //This is called an anonymous function, because it has no name. You will often see anonymous functions when a function expects to recieve another function as a parameter. This form of creating a function is also known as function expression. It is NOT hoisted.
+
+let textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+
+// If you pass an anonymous, there's an alternative form you can use called an arrow function. If possible used arrow functions over function declaration ( function() ). They can make code shorter and more readable.
+    
+// When you create a function, the variables and other things defined inside the function are inside their own seperate scope, meaning they are locked away in their own seperate compartments, unreachable from code outside the functions.
+
+// The top level outside of all your functions is called the global scope. Values defined in the global scope are accessible from everywhere in the code
+
+//JavaScript is set up like this for various reason but mainly for security and organization. Calling external scriots could cause problems if you happened to be using same variable names as other parts of the code.
+
+//Keeping parts of your code locked away in functions avoids such problems, and is considered the best practice.
+    
+
