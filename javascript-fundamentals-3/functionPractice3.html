@@ -31,17 +31,25 @@
 
     // Add your code here
     
-    // TASK: you have to create a simple function — chooseName() — that prints a random name from the provided array (names) to the provided paragraph (para), and then run it once.
+    // TASK: create a function that generates this random number between two numbers. Then have chooseName() accept this new function as a parameter. print the result in para.
     
-    function chooseName(array){
+    function chooseName(array,randomInt){
         console.log('function is running.')
-        let arrayLength = array.length;
-        let randInt = Math.floor(Math.random() * (arrayLength));
-        let randName = array[randInt];
+        let randName = array[randomInt];
         para.innerHTML = randName;
     }
 
-    chooseName(names);
+    function randInt(range){
+        let randInt = Math.floor(Math.random() * (range.length));
+        console.log(randInt);
+        return randInt;
+    }
+
+
+
+    
+
+    chooseName(names,randInt(names));
 
     // Don't edit the code below here!
 
