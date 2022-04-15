@@ -101,3 +101,4 @@ For example, JavaScript can:
     When the data is available, display it on the webpage.
 
 To do this, the JavaScript engine uses an event loop.
+*/
