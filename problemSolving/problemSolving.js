@@ -71,4 +71,21 @@ Given your inputs, what are the steps necessary to return the desired output?
     Otherwise, print the current loop iteration
 */
 
-let answer = parseInt(prompt('Please enter a number you would like to FizzBuzz up to: '))
+let answer = parseInt(prompt('Please enter a number you would like to FizzBuzz up to: '));
+
+for (let i =1; i <= answer; i++){
+    switch(true){
+        case ((i % 3 ===0 ) && (i % 5 === 0)):
+            console.log('FizzBuzz');
+            break;
+        case i % 3 === 0:
+            console.log('Fizz');
+            break;
+        case i % 5 === 0:
+            console.log('Buzz');
+            break;
+        default:
+            console.log(i);
+    }
+}
+
