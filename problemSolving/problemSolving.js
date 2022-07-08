@@ -75,7 +75,7 @@ let answer = parseInt(prompt('Please enter a number you would like to FizzBuzz u
 
 for (let i =1; i <= answer; i++){
     switch(true){
-        case ((i % 3 ===0 ) && (i % 5 === 0)):
+        case i % 3 ===0 && i % 5 === 0:
             console.log('FizzBuzz');
             break;
         case i % 3 === 0:
