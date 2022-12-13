@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #fff;
+      color: #333;
+      font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+      padding: 1em;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    label{
+      display: block;
+    }
+  </style>
+  <title>Form Manipulation</title>
+</head>
+<body>
+  <form>
+    <section>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+              <input type="text" id="name" name="name">
+          </li>
+          <li>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <legend>Comment Information</legend>
+        <ul>
+          <li>
+            <label for="comment">Comment:</label>
+              <input type="text" id="comment" name="comment">
+          </li>
+          <li>
+            <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email">
+          </li>
+        </ul>
+      </fieldset>
+    </section>
+  </form>
+  
+</body>
+</html>
